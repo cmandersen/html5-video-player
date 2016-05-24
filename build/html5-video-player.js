@@ -24,7 +24,7 @@ function SmartProperty(property, name, options) {
 function CMAVideo(element, options) {
     var This = this;
     this.element = element;
-    this.options = options;
+    this.options = options || {};
 
     this.clickToPause = this.options.clickToPause == undefined ? true : this.options.clickToPause;
     this.progressBar = this.options.progressBar;

@@ -22,6 +22,10 @@ function SmartProperty(property, name, options) {
     });
 }
 function CMAVideo(element, options) {
+    if(element == undefined) {
+        throw new TypeError('Element must be defined!');
+    }
+
     var This = this;
     this.element = element;
     this.options = options || {};
